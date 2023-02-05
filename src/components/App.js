@@ -14,7 +14,8 @@ function App() {
   return (
     <div className={"App " + (isDarkMode ? "dark" : "light")}>
       <Header isDarkMode={isDarkMode} onDarkModeClick={handleDarkModeClick} />
-      <ShoppingList items={items} />
+      {/* also pass in setItems as prop  */}
+      <ShoppingList items={items} setItems={setItems}/> 
     </div>
   );
 }
